@@ -21,5 +21,4 @@ int main(){
     }
 
     cout << max(dp[n][1], dp[n][2]);
-
 }
