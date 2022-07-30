@@ -16,6 +16,6 @@ int main(){
     for(int i=0; i<n; i++){
         w = max(w, rope[i]*(n-i));
     }
-    cout << w;
 
+    cout << w;
 }
