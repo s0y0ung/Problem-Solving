@@ -18,5 +18,4 @@ int main(){
         cin >> target;
         cout << binary_search(a, a+n, target) << "\n";
     }
-
 }
