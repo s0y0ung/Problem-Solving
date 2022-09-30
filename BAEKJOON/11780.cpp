@@ -47,22 +47,23 @@ int main(){
         cout << "\n";
     }
 
-    cout << "==========\n";
-
     // 경로 복원
     for(int i = 1; i <= n; i++){
         for(int j = 1; j <= n; j++){
             if(adj[i][j] == INF || adj[i][j] == 0) cout << "0 ";
             else{
+                // cout << "i and j : " << i << " " << j << "\n";
                 int des = nxt[i][j];
                 vector<int> v;
+                v.push_back(i);
                 while(des != j){
                     v.push_back(des);
                     des = nxt[des][j];
                 }
+                v.push_back(j);
                 cout << v.size() << " ";
                 for(int k = 0; k<v.size(); k++)
-                    cout << v[i] << " ";
+                    cout << v[k] << " ";
             }
             cout << "\n";
         } 
